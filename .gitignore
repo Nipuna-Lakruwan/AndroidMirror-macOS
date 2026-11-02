@@ -1,0 +1,25 @@
+#
+#  .gitignore
+#  AndroidMirror
+#
+#  Change Description:
+#  Author: Nipuna Lakruwan
+#  Date: 2026-11-02
+#  Previous Code: Excluded standard SwiftPM folders but missed built macOS app bundle and temporary files.
+#  Modified Code: Added .app bundle and Xcode temporary caches to gitignore.
+#  How: Appended build artifact patterns.
+#
+
+.DS_Store
+/.build
+/Packages
+xcuserdata/
+DerivedData/
+.swiftpm/configuration/registries.json
+.swiftpm/xcode/package.xcworkspace/contents.xcworkspacedata
+.netrc
+
+# Build artifacts
+*.app/
+*.dSYM/
+Android\ Mirror.app/
